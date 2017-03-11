@@ -2,7 +2,8 @@
 -- Name:             Account Overlay
 -- Notes:            Copyright (c) 2016 Jeremy Gulickson
 -- Version:          1.0.01312016
--- Usage:            Shows current Equity, Day P/l, Day P/L in Percent and Leverage.
+-- Usage:            Calculates and displays account's current Equity, day p/l, day p/l in
+--                   percent and leverage.
 --
 -- Requirements:     FXTS (FXCM Trading Station)
 -- Download Link:    http://download.fxcorporate.com/FXCM/FXTS2Install.EXE

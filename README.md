@@ -1,23 +1,17 @@
-#**FXTS Indicators & Strategies**
+#FX-TradingStation-Indicators
 
+##Overview
+####Summary
+Repository contains eight (8) non-trading indicators written in Lua and intended to be executed using [FXCM Trading Station](https://www.fxcm.com/uk/platforms/trading-station/innovative-platform/); both were originally created as proof of concepts. FXCM Trading Station is a financial trading application written for Windows that can leverage scripts written in Lua (and JavaScript) via [Indicore SDK](http://www.fxcodebase.com/bin/products/IndicoreSDK/3.3.0/help/Lua/web-content.html) to further extend functionality.
 
-##**Overview**
-######1x Strategy
-Objective: Proof of concept to control Philips Hue Lights based on trading activity.
+######Account Overview
+Recreates all trading tables and adds additional values for display on Marketscope for improved consumability.
 
-######1x Strategy
-Objective: Proof of concept to facilitate a variety of push notifications.
+######Account Overlay
+Calculates and displays account's current Equity, day p/l, day p/l in percent and leverage.
 
-######5x indicators
-Objective: Highlight specific account level statistics for FXTS (FXCM Trading Station).
-
-
-##**Functionality**
-######Hue Lights Control
-Proof of concept to control Philips Hue Lights based on trading activity.
-
-######Push Notifications
-Proof of concept to facilitate of push notifications for trading, account and offer activity.
+######Symbol Overlay
+Calculates and displays symbol's change during period in pips and percent terms as well as symbol's net open positions and net PL.
 
 ######Day P/L In Percent
 Calculates and displays Day P/L in percentage terms.
@@ -34,92 +28,90 @@ Calculates and displays equity drawdown based on the current equity compared to 
 ######Symbol Overlay
 Calculates and displays symbol's change during period in pips and percent terms as well as symbol's net open positions and net PL.
 
-
-##**Screenshots**
-![Screenshot](https://raw.githubusercontent.com/jgulickson/FXTS-Indicators/master/Screenshot-1.png)
-
-![Screenshot](https://raw.githubusercontent.com/jgulickson/FXTS-Indicators/master/Screenshot-2.png)
-
-
 ##**Installation**
-1. Download all desired *.lua files from the repository.
+1. Clone or download desired *.lua files from this repository.
 
-2. Move downloaded *.lua files to the following directory depending on 32 or 64 bit OS version:
+2. Move *.lua files to the following directory depending on 32 or 64 bit OS version:
 
+	`C:\Program Files (x86)\Candleworks\FXTS2\strategies\Custom`
 
-	`C:\Program Files (x86)\Candleworks\FXTS2\indicators\Custom`
+	`C:\Program Files\Candleworks\FXTS2\strategies\Custom`
 
-	`C:\Program Files\Candleworks\FXTS2\indicators\Custom`
+3. If previously running, close and reopen FXCM Trading Station.
 
-3. Close and reopen FXTS.
+4. Strategy(ies) will now be available under 'Alerts and Trading Automation' > 'New Strategy or Alert.'
 
+*OR*
 
-4. Indicators will now be available under the section 'Statistics' in the 'Add Indicator' window.
+1. Clone or download desired *.lua files from this repository.
 
-5. Strategies will now be available under the section 'Statistics' in the 'Add Indicator' window.
+2. If not running, open FXCM Trading Station.
 
-##**Notes**
-######Platform Requirement
-FXTS (FXCM Trading Station)
+3. Drap and drop *.lua files onto a Marketscope chart instance.
 
-######Platform Download URL
-[http://download.fxcorporate.com/FXCM/FXTS2Install.EXE](http://download.fxcorporate.com/FXCM/FXTS2Install.EXE)
+##Version History
 
-######Indicore Documentation URL
-[http://www.fxcodebase.com/bin/beta/IndicoreSDK-3.0/help/web-content.html](http://www.fxcodebase.com/bin/beta/IndicoreSDK-3.0/help/web-content.html)
+####Account Overview
+######1.0.mmddyyyy
+- ***Initial release***
 
+####Account Overlay
+######1.0.01312016
+- ***Initial release***
 
-##**Version History**
+####Symbol Overlay
+######1.1.07282016
+- ***Feature release***
+- Added average open rate
+- Added average pips
+- Added automatic suppression of values if exposure = 0
+- Overall code optimization
 
-#####Hue Lights Control
-######1.0.03092015
-- Initial release
+######1.0.07282016
+- ***Initial release***
 
-#####Push Notifications
-######1.1.08242015
-- Initial release
-
-#####Day P/L In Percent
-######1.2.11062014
+####Day P/L In Percent
+######1.1.11062014
+- ***Cosmetic release***
 - Updated default value for 'Nickname' to ""
 - Added support for existing (though unused) option to control font color
 
 ######1.0.11062014
-- Initial release
+- ***Initial release***
 
-#####Effective Leverage
-######1.2.11062014
+####Effective Leverage
+######1.1.11062014
+- ***Cosmetic release***
 - Updated default value for 'Nickname' to ""
 - Updated timer to refresh every 30 seconds from 60 seconds
 - Added option to control precision for 'Format_Precision'
 - Added support for existing (though unused) option to control font color
 
 ######1.0.11062014
-- Initial release
+- ***Initial release***
 
-#####Equity Return
+####Equity Return
 ######1.2.11062014
+- ***Cosmetic release***
 - Updated default value for 'Nickname' to ""
 - Updated 'Format_Financial' function to add thousands separator
 - Added option to control precision for 'Format_Financial'
 - Added support for existing (though unused) option to control font color
 
 ######1.1.11062014
+- ***Feature release***
 - Fixed percentage calculation
 
 ######1.0.11062014
-- Initial release
+- ***Initial release***
 
-#####Equity Drawdown
-######1.2.11062014
+####Equity Drawdown
+######1.1.11062014
+- ***Cosmetic release***
 - Updated default value for 'Nickname' to ""
 - Updated 'Format_Financial' function to add thousands separator
 - Added option to control precision for 'Format_Financial'
 - Added support for existing (though unused) option to control font color
 
 ######1.0.11062014
-- Initial release
-
-#####Symbol Overlay
-######1.0.11092014
-- Initial release
+- ***Initial release***
