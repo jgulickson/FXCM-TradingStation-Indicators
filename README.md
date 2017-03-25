@@ -33,9 +33,9 @@ Calculates and displays symbol's change during period in pips and percent terms 
 
 2. Move *.lua files to the following directory depending on 32 or 64 bit OS version:
 
-	`C:\Program Files (x86)\Candleworks\FXTS2\strategies\Custom`
+	`C:\Program Files (x86)\Candleworks\FXTS2\indicators\Custom`
 
-	`C:\Program Files\Candleworks\FXTS2\strategies\Custom`
+	`C:\Program Files\Candleworks\FXTS2\indicators\Custom`
 
 3. If previously running, close and reopen FXCM Trading Station.
 
