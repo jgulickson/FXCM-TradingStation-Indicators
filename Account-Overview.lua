@@ -27,7 +27,7 @@ local Summary = {};
 local Currency = {};
 
 local CurrencyNames = {"EUR","USD","GBP","AUD","NZD","CAD","CHF","HKD","JPY","NOK","SEK","SGD","TRY","ZAR", ""};
-local Nicknames = {"Portfolio Builder", "BreakoutME", "Manual"};
+local Nicknames = {"", "", ""};
 local AccountsNames = {};
 local AccountsEquity = {};
 local AccountsAmount = {};

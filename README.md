@@ -4,14 +4,10 @@
 #### Summary
 Repository contains eight (8) non-trading indicators written in Lua and intended to be executed using [FXCM Trading Station](https://www.fxcm.com/uk/platforms/trading-station/innovative-platform/). FXCM Trading Station is a financial trading application written for Windows that can leverage scripts written in Lua (and JavaScript) via [Indicore SDK](http://www.fxcodebase.com/bin/products/IndicoreSDK/3.3.0/help/Lua/web-content.html) to further extend functionality.
 
-###### Account Overview
-Recreates all trading tables and adds additional values for display on Marketscope for improved consumability.
-
-###### Account Overlay
-Calculates and displays account's current Equity, day p/l, day p/l in percent and leverage.
-
 ###### Symbol Overlay
 Calculates and displays symbol's change during period in pips and percent terms as well as symbol's net open positions and net PL.
+
+![Symbol Overlay](/README-Images/Symbol-Overlay.png)
 
 ###### Day P/L In Percent
 Calculates and displays Day P/L in percentage terms.
@@ -25,8 +21,20 @@ Calculates and displays equity return based on the current equity compared to th
 ###### Equity Drawdown
 Calculates and displays equity drawdown based on the current equity compared to the user variable 'Equity High'.
 
-###### Symbol Overlay
-Calculates and displays symbol's change during period in pips and percent terms as well as symbol's net open positions and net PL.
+![Symbol Overlay](/README-Images/4x-Indicators.png)
+
+###### Account Overlay
+Calculates and displays account's current Equity, day p/l, day p/l in percent and leverage.
+
+![Symbol Overlay](/README-Images/Account-Overlay.png)
+
+###### Account Overview
+Recreates all trading tables and adds additional values for display on Marketscope for improved consumability.
+
+![Symbol Overlay](/README-Images/Account-Overview.png)
+
+###### Inverted Spread Identifier
+Highlights zero and negative spreads.
 
 ## **Installation**
 1. Clone or download desired *.lua files from this repository.
@@ -50,14 +58,6 @@ Calculates and displays symbol's change during period in pips and percent terms 
 3. Drap and drop *.lua files onto a Marketscope chart instance.
 
 ## Version History
-
-#### Account Overview
-###### 1.0.mmddyyyy
-- ***Initial release***
-
-#### Account Overlay
-###### 1.0.01312016
-- ***Initial release***
 
 #### Symbol Overlay
 ###### 1.1.07282016
@@ -114,4 +114,16 @@ Calculates and displays symbol's change during period in pips and percent terms 
 - Added support for existing (though unused) option to control font color
 
 ###### 1.0.11062014
+- ***Initial release***
+
+#### Account Overlay
+###### 1.0.01312016
+- ***Initial release***
+
+#### Account Overview
+###### 1.0.mmddyyyy
+- ***Initial release***
+
+#### Inverted Spread Identifier
+###### 1.0.mmddyyyy
 - ***Initial release***
