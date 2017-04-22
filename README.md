@@ -10,7 +10,7 @@ Calculates and displays symbol's change during period in pips and percent terms 
 ![Symbol Overlay](/README-Images/Symbol-Overlay.png)
 
 ###### Day P/L In Percent
-Calculates and displays Day P/L in percentage terms.
+Calculates and displays day p/l in percentage terms.
 
 ###### Effective Leverage
 Calculates and displays effective leverage based on the current equity compared to open positions converted to USD values.
@@ -24,7 +24,7 @@ Calculates and displays equity drawdown based on the current equity compared to 
 ![Symbol Overlay](/README-Images/4x-Indicators.png)
 
 ###### Account Overlay
-Calculates and displays account's current Equity, day p/l, day p/l in percent and leverage.
+Calculates and displays account's current equity, day p/l, day p/l in percent and leverage.
 
 ![Symbol Overlay](/README-Images/Account-Overlay.png)
 
