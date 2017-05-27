@@ -1,4 +1,4 @@
-# FX-TradingStation-Indicators
+# FXCM-TradingStation-Indicators
 
 ## Overview
 #### Summary
